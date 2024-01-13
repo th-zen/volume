@@ -150,3 +150,24 @@ body {
   left: 84%;
   top: 84%;
 }
+
+
+
+
+/*Unterseite Styling */
+.titlebox {
+  display: flex;
+  margin: 50px;
+  gap: 50px;
+}
+
+.titlebox img {
+  flex: 1;
+  border-radius: 1vmax;
+  height: 92vh;
+  object-fit: cover;
+}
+
+.titlebox .description {
+  flex: 1;
+}
