@@ -6,15 +6,56 @@ body {
   background-color:#F7CAE1;
 }
 
-.logo {
+.mid_section {
   margin: 0;
   position: absolute;
+  left: 50%;
+  -ms-transform: translate (-50%, -0%);
+  transform: translate(-50%, -0%);
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  pointer-events: none;
+}
+
+.bottom_rec {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+
+.logo {
+  margin: 0;
+  /* position: absolute;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  height: 700px;
+  transform: translate(-50%, -50%); */
+  width: 400px;
   pointer-events: none;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  height: 0px;
+  transition: height 0.3s ease;
+}
+
+.navlinks a {
+  font-family: 'Syne', sans-serif;
+  font-size: 50px;
+  margin-bottom: 0;
+  text-decoration: none;
+  color: black;
+  pointer-events: all;
 }
 
 .infos {
@@ -105,6 +146,7 @@ body {
 
 .tile:nth-child(4) {
   /* background-color: rgb(102, 187, 106); */
+  display: none;
   height: 14%;
   width: 12%;
   left: 45%;
@@ -131,7 +173,7 @@ body {
   /* background-color: rgb(63, 81, 181); */
   height: 16%;
   width: 20%;
-  left: 50%;
+  left: 60%;
   top: 74%;
 }
 
@@ -170,4 +212,53 @@ body {
 
 .titlebox .description {
   flex: 1;
+}
+
+
+/*MENU TOGGLE*/
+
+.menu_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  height: 50px;
+  width: 50px;
+  pointer-events: all;
+}
+
+.menu-icon {
+  position: relative;
+  width: 3em;
+  height: 2.25em;
+  display: inline-block;
+}
+.menu-icon span {
+  position: absolute;
+  height: 0.1875em;
+  width: 100%;
+  background-color: #363636;
+  transition: all 250ms ease-in-out;
+  transform: rotate(0deg);
+}
+.menu-icon span:nth-child(1) {
+  top: 0.09375em;
+}
+.menu-icon span:nth-child(2), .menu-icon span:nth-child(3) {
+  top: 0.9375em;
+}
+.menu-icon span:nth-child(4) {
+  top: 1.875em;
+}
+.menu-button:hover span, .menu-button:focus span, .menu-button:active span {
+  background: black;
+}
+.menu-icon.is-active span:nth-child(1), .menu-icon.is-active span:nth-child(4) {
+  opacity: 0;
+}
+.menu-icon.is-active span:nth-child(2) {
+  transform: rotate(45deg);
+}
+.menu-icon.is-active span:nth-child(3) {
+  top: 0.9375em;
+  transform: rotate(-45deg);
 }

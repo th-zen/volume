@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
   <title>VOLUME EXHIBITION</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,7 +60,28 @@
       </a>
     </div>
   </div>
-  <img src="media/Logo.svg" class="logo">
+  <div class="mid_section">
+    <img src="media/Logo.svg" class="logo">
+    <div class="navlinks">
+      <a href="index.html">Communication</a>
+      <a href="index.html">Interaction</a>
+      <a href="index.html">Media</a>
+    </div>
+    <!-- <div class="bottom_rec" onclick="toggleNavlinks()"></div> -->
+    <div class="menu_container" onclick="toggleNavlinks()">
+      <a href="#" class="menu-button [ js-menu-button ]">
+          <div class="menu-icon">
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+          </div>
+      </a>
+    </div>
+  </div>
+
+  
+  
   <div class="infos">
     <div class="details">
       <p>FH JOANNEUM</p>
@@ -71,6 +94,7 @@
       <p>8010 GRAZ</p>
     </div>
   </div>
+
   <script src="javascript.js"></script>
 </body>
 </html>
