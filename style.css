@@ -262,3 +262,10 @@ body {
   top: 0.9375em;
   transform: rotate(-45deg);
 }
+
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
