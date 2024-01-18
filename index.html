@@ -13,8 +13,45 @@
   <link rel="stylesheet" href="https://use.typekit.net/kiw4jyp.css"> 
 </head>
 <body>
-  <canvas id="mousecanvas"></canvas>
-  <script src="mousetrail.js"></script>
+  <script>
+    if (window.innerWidth >= 1000) {
+      document.write('<canvas id="mousecanvas"><\/canvas>');
+      document.write('<script src="mousetrail.js"><\/script>');
+    }
+  </script>
+  
+  <div class="mid_section">
+    <img src="media/Logo.svg" class="logo">
+    <div class="navlinks">
+      <a href="index.html">Communication</a>
+      <a href="index.html">Interaction</a>
+      <a href="index.html">Media</a>
+    </div>
+    <!-- <div class="bottom_rec" onclick="toggleNavlinks()"></div> -->
+    <div class="menu_container" onclick="toggleNavlinks()">
+      <a href="#" class="menu-button [ js-menu-button ]">
+          <div class="menu-icon">
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+          </div>
+      </a>
+    </div>
+  </div>
+  <div class="infos">
+    <div class="details">
+      <p>FH JOANNEUM</p>
+      <p>INFORMATIONSDESIGN</p>
+      <p>BACHELOR IND21</p><br>
+      <p>OPENING 31.1.2024 19:00</p>
+      <p>1.2 - 4.2. 10:00 - 22:00</p><br>
+      <p>KUNSTKLUB KRÄFTNER</p>
+      <p>REITSCHULGASSE 13</p>
+      <p>8010 GRAZ</p>
+    </div>
+  </div>
+
   <div id="gallery">
     <div class="tile">
       <a href="unterseite.html">
@@ -62,41 +99,13 @@
       </a>
     </div>
   </div>
-  <div class="mid_section">
-    <img src="media/Logo.svg" class="logo">
-    <div class="navlinks">
-      <a href="index.html">Communication</a>
-      <a href="index.html">Interaction</a>
-      <a href="index.html">Media</a>
-    </div>
-    <!-- <div class="bottom_rec" onclick="toggleNavlinks()"></div> -->
-    <div class="menu_container" onclick="toggleNavlinks()">
-      <a href="#" class="menu-button [ js-menu-button ]">
-          <div class="menu-icon">
-           <span></span>
-           <span></span>
-           <span></span>
-           <span></span>
-          </div>
-      </a>
-    </div>
-  </div>
 
-  
-  
-  <div class="infos">
-    <div class="details">
-      <p>FH JOANNEUM</p>
-      <p>INFORMATIONSDESIGN</p>
-      <p>BACHELOR IND21</p><br>
-      <p>OPENING 31.1.2024 19:00</p>
-      <p>1.2 - 4.2. 10:00 - 22:00</p><br>
-      <p>KUNSTKLUB KRÄFTNER</p>
-      <p>REITSCHULGASSE 13</p>
-      <p>8010 GRAZ</p>
-    </div>
-  </div>
-
-  <script src="javascript.js"></script>
+  <script>
+    if (window.innerWidth >= 1000) {
+      document.write('<script src="javascript.js"><\/script>');
+    }
+  </script>
+  <script src="menu.js"></script>
+   
 </body>
 </html>

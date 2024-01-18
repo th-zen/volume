@@ -1,7 +1,7 @@
 debugger;
 const canvas = document.getElementById('mousecanvas'); // Replace 'yourCanvasId' with the actual ID of your canvas element
 const ctx = canvas.getContext('2d');
-const params = { spring: 0.4, pointsNumber: 30, friction: .5, baseWidth: .9 };
+const params = { spring: 0.4, pointsNumber: 40, friction: .5, baseWidth: .9 };
 
 setupCanvas();
 window.addEventListener("resize", setupCanvas);
