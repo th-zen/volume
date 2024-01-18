@@ -62,8 +62,7 @@ body {
 .infos {
   position: fixed;
   bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 50px;
   pointer-events: none;
   z-index: 99;
 }
@@ -74,7 +73,6 @@ body {
   font-weight: 500;
   font-style: normal;
   margin-left: 20px;
-  text-align: center; /* Optional: Center the text within .details */
 }
 
 .details p {
@@ -301,9 +299,14 @@ canvas {
 
   .infos {
     position: relative;
-    width: 100vw;
-    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
   }
+  
+  .details {
+    text-align: center; /* Optional: Center the text within .details */
+  }
+
   #gallery {
     position: relative;
     display: flex;
