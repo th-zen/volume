@@ -195,8 +195,11 @@ body {
 /*Unterseite Styling */
 .titlebox {
   display: flex;
-  margin: 50px;
+  flex-wrap: wrap;
+  padding: 50px;
   gap: 50px;
+  width: 100vw;
+  box-sizing: border-box;
 }
 
 .titlebox img {
@@ -208,6 +211,13 @@ body {
 
 .titlebox .description {
   flex: 1;
+  display: inline-block;
+  flex-wrap: wrap;
+}
+
+.titlebox .title {
+  font-size: clamp(40px, 5vw, 100px);
+  margin-top: 0;
 }
 
 
