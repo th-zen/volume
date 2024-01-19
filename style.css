@@ -23,12 +23,6 @@ body {
   z-index: 99;
 }
 
-.bottom_rec {
-  height: 100px;
-  width: 100px;
-  background-color: green;
-}
-
 .logo {
   margin: 0;
   /* position: absolute;
@@ -294,17 +288,20 @@ canvas {
   .mid_section {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    margin-bottom: 30px;
   }
 
   .infos {
     position: relative;
+    bottom: auto;
     left: 50%;
     transform: translateX(-50%);
   }
   
   .details {
     text-align: center; /* Optional: Center the text within .details */
+    margin-left: 0px;
   }
 
   #gallery {
@@ -411,4 +408,12 @@ canvas {
     left: auto;
     top: auto;
   }
+}
+
+@media only screen and (max-width: 420px) {
+
+  .logo {
+    width: 80%;
+  }
+
 }
