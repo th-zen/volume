@@ -99,13 +99,30 @@ body {
 
 .titlebox .description {
   flex: 1;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   flex-wrap: wrap;
+}
+
+.titlebox  a {
+  height:fit-content;
+  font-size: 30px;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: end;
+}
+
+.titlebox a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .titlebox .title {
   font-size: clamp(40px, 5vw, 100px);
   margin-top: 0;
+  margin-left: 15px;
 }
 
 
