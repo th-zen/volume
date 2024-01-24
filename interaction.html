@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <title>VOLUME EXHIBITION</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gallery_interaction.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/kiw4jyp.css"> 
+  <meta content="Abschlussausstellung des 5. Semesters des Bachelor-Studiengangs Informationsdesign. Die drei Vertiefungsrichtungen Communication-, Media-, und Interaction Design zeigen ihre Semesterarbeiten zum Thema Volume." name="description">
+  <meta content="Volume - Abschlussausstellung Studiengang Informationsdesign" property="og:title">
+  <meta content="Die drei Vertiefungsrichtungen Communication-, Media-, und Interaction Design zeigen ihre Semesterarbeiten zum Thema Volume." property="og:description">
+  <meta content="Volume - Abschlussausstellung Studiengang Informationsdesign" property="twitter:title">
+  <meta content="Die drei Vertiefungsrichtungen Communication-, Media-, und Interaction Design zeigen ihre Semesterarbeiten zum Thema Volume." property="twitter:description">
+  <meta property="og:type" content="website">
+   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+</head>
+<body>
+  <script>
+    if (window.innerWidth >= 1000) {
+      document.write('<canvas id="mousecanvas"><\/canvas>');
+      document.write('<script src="mousetrail.js"><\/script>');
+    }
+  </script>
+  <div class="mid_section">
+    <a href="./index.html">
+      <img src="media/Interaction_Logo.svg" class="logo">
+    </a>
+    <div class="navlinks">
+      <a href="communication.html">Communication</a>
+      <a href="interaction.html">Interaction</a>
+      <a href="media.html">Media</a>
+    </div>
+    <div class="menu_container" onclick="toggleNavlinks()">
+      <a href="#" class="menu-button [ js-menu-button ]">
+          <div class="menu-icon">
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+          </div>
+      </a>
+    </div>
+  </div>
+  <div class="infos">
+    <div class="details">
+      <p>FH JOANNEUM</p>
+      <p>INFORMATIONSDESIGN</p>
+      <p>BACHELOR IND21</p><br>
+      <p>OPENING 31.1.2024 19:00</p>
+      <p>1.2 - 4.2. 10:00 - 22:00</p><br>
+      <p>KUNSTKLUB KRÄFTNER</p>
+      <p>REITSCHULGASSE 13</p>
+      <p>8010 GRAZ</p>
+    </div>
+  </div>
+
+  <div id="gallery">
+    <div class="tile">
+      <a href="project_pages/01_drink_of_fortune.html">
+        <img src="media/branches/interaction/1_Drink of Fortune/photos/Header.jpg" />
+      </a>
+    </div>
+    <div class="tile">
+      <a href="project_pages/02_drink_decades.html">
+        <img src="media/branches/interaction/2_Drinking through the decades/photos/Header.jpg" />
+      </a>
+    </div>
+    <div class="tile">
+      <a href="project_pages/03_bartherapy.html">
+        <img src="media/branches/interaction/3_BarTherapy/photos/Header.jpg" />
+      </a>
+    </div>
+    <div class="tile">
+      <a href="project_pages/04_match_cocktail.html">
+        <img src="media/branches/interaction/4_Match your Cocktail/photos/Header.jpg" />
+      </a>
+    </div>
+    <div class="tile">
+      <a href="project_pages/05_robotender.html">
+        <img src="media/branches/interaction/5_Robotender/photos/Header.jpg" />
+      </a>
+    </div>
+    <div class="tile">
+      <a href="project_pages/06_sipsynth.html">
+        <img src="media/branches/interaction/5_Sipsynth/photos/Header.jpg" />
+      </a>
+    </div>
+  </div>
+
+  <script>
+    if (window.innerWidth >= 1000) {
+      document.write('<script src="javascript.js"><\/script>');
+    }
+  </script>
+  <script src="menu.js"></script>
+   
+</body>
+</html>
