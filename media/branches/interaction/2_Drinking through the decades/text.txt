@@ -1,0 +1,2 @@
+EN
+Our project shows the most popular cocktails from the 1920s, 1950s, 1980s and 2000s. We created an immersive scrolling website that allows you to fully immerse yourself in the respective decade. It is designed with different illustrations and little animations to catch the visitor’s attention. To scroll, you can use an hourglass which is attached to a wooden construction. Depending on the position of the hourglass, scrolling upwards or downwards is performed or stopped.
