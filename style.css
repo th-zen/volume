@@ -302,6 +302,10 @@ canvas {
     margin-bottom: 30px;
   }
 
+  .navlinks a {
+    font-size: 25px;
+  }
+
   .infos {
     position: relative;
     bottom: auto;
