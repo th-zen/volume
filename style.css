@@ -125,6 +125,13 @@ body {
   margin-left: 15px;
 }
 
+.authors {
+  margin-left: 20px;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-size: 20px;
+  width: 50%;
+}
+
 
 /*MENU TOGGLE*/
 
