@@ -131,7 +131,6 @@
   
   .tile:nth-child(4) {
     /* background-color: rgb(102, 187, 106); */
-    display: none;
     height: 40%;
     width: 90%;
     left: auto;
