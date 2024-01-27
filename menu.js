@@ -7,8 +7,19 @@ function toggleNavlinks() {
       // Get the computed style of the element
       var computedStyle = window.getComputedStyle(navlinks);
   
-      // Toggle between '0px' and '300px'
-      navlinks.style.height = (computedStyle.height === '0px' || computedStyle.height === '0px') ? '200px' : '0px';
+      
+      
+      
+        if (window.matchMedia("(max-width: 767px)").matches) {
+            // The screen width is less than or equal to 767 pixels
+            // Toggle between '0px' and '800px'
+            navlinks.style.height = (computedStyle.height === '0px' || computedStyle.height === '0px') ? '120px' : '0px';
+        } else {
+            // The screen width is greater than 767 pixels
+            // Toggle between '0px' and '200px'
+            navlinks.style.height = (computedStyle.height === '0px' || computedStyle.height === '0px') ? '200px' : '0px';
+        }
+    
   }
 
 

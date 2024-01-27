@@ -21,7 +21,10 @@ body {
   gap: 20px;
   pointer-events: none;
   z-index: 99;
+  text-align: center;
 }
+
+
 
 .logo {
   margin: 0;
@@ -142,6 +145,7 @@ body {
   height: 50px;
   width: 50px;
   pointer-events: all;
+  text-align: left;
 }
 
 .menu-icon {
@@ -216,11 +220,37 @@ canvas {
     bottom: auto;
     left: 50%;
     transform: translateX(-50%);
+    margin-bottom: 30px;
   }
   
   .details {
     text-align: center; /* Optional: Center the text within .details */
     margin-left: 0px;
+  }
+
+  .titlebox {
+    padding: 20px;
+    width: 100vw;
+    gap: 30px;
+  }
+
+  .titlebox .title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .titlebox img {
+    width: 100% !important;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .authors {
+    margin: 0;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
   }
 }
 
